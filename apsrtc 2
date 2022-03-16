@@ -1,0 +1,24 @@
+SQL> update apsrtc set ticketprice=ticketprice+50 where kms<500;
+
+4 rows updated.
+
+SQL> update apsrtc set ticketprice=ticketprice+100 where kms>500;
+
+6 rows updated.
+
+SQL> select *from apsrtc;
+
+ SERVICENO SERTYPE    PLACE             KMS TICKETPRICE
+---------- ---------- ---------- ---------- -----------
+      2109 luxury     kkd               409         400
+      5343 express    peedapuram        454         410
+      9870 express    vizag             870         774
+      9843 passenger  anapathi          890         865
+      6783 passenger  dhuvada           900         745
+      6252 passenger  tuni              567         966
+      5432 luxury     anakapali         432         836
+      5632 luxury     regupalm          231         412
+      6533 express    gullupadu         567         735
+      4323 express    gollaprolu        698         754
+
+10 rows selected.
